@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(.*)\.sevgurasp\.ru
+RewriteRule ^(.*)$ http://sevgurasp.ru/%1/$1 [L,NC,QSA]
